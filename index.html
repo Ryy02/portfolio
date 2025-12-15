@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Navigation -->
   <nav>
     <div class="logo">J-Rydell</div>
@@ -19,22 +20,21 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <header id="hero">
-    <div class="hero-text">
-      <h1 class="gradient-text">J-Rydell Crescencio</h1>
-      <p>Student | Aspiring Developer</p>
-      <a href="#projects" class="cta-btn">View My Work</a>
-    </div>
-  </header>
+  <!-- Hero -->
+ <!-- Hero -->
+<header id="hero">
+  <img src="rydell.jpg.webp" alt="J-Rydell Crescencio" class="profile-pic">
+  <h1>J-Rydell Crescencio</h1>
+  <p>Student | Aspiring Developer</p>
+</header>
+
 
   <!-- About -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Hi, I’m J-Rydell Crescencio. I’m a motivated and passionate individual who enjoys 
-      learning, creating, and taking on new challenges. I value growth, continuous improvement, 
-      and using my knowledge to make a positive impact.
+      Hi, I’m J-Rydell Crescencio. I’m a motivated and passionate individual who enjoys
+      learning, creating, and taking on new challenges.
     </p>
   </section>
 
@@ -55,46 +55,32 @@
 
   <!-- Skills -->
   <section id="skills">
-  <h2>My Skills</h2>
-  <div class="skills-container">
-    <div class="skill">
-      <img src="html.png" alt="HTML5 Logo">
-      <p>HTML5</p>
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><img src="html.png"><p>HTML5</p></div>
+      <div class="skill"><img src="css.png"><p>CSS3</p></div>
+      <div class="skill"><img src="java.png"><p>Java</p></div>
+      <div class="skill"><img src="php.png"><p>PHP</p></div>
+      <div class="skill"><img src="mysql.png"><p>MySQL</p></div>
+      <div class="skill"><img src="c.png"><p>C</p></div>
     </div>
-    <div class="skill">
-      <img src="css.png" alt="CSS3 Logo">
-      <p>CSS3</p>
-    </div>
-    <div class="skill">
-      <img src="java.png" alt="Java Logo">
-      <p>Java</p>
-    </div>
-    <div class="skill">
-      <img src="php.png" alt="PHP Logo">
-      <p>PHP</p>
-    </div>
-    <div class="skill">
-      <img src="mysql.jpg" alt="Mysql Logo">
-      <p>Mysql</p>
-    </div>
-    <div class="skill">
-      <img src="c.png" alt="C Logo">
-      <p>C</p>
-    </div>
-  </div>
-</section>
-
   </section>
 
   <!-- Contact -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p>📞 09384139595</p>
-    <p>📧 <a href="mailto:rydellcrescencio@gmail.com">rydellcrescencio@gmail.com</a></p>
+    <h2>Send Me a Message</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Email</button>
+    </form>
   </section>
 
   <footer>
     <p>© 2025 J-Rydell Crescencio | Portfolio</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
